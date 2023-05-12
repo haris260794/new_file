@@ -32,9 +32,13 @@ $_SESSION['errmsg']="Invalid username or password";
 		<link rel="stylesheet" href="bootstrap.min.css">
 	</head>
 	<body class="login">
-		<div class="container">
-			<div class="row text-center">
-					<h2>Admin Login</h2>
+		<div class="container mt-3">
+			<div class="row justify-content-center">
+            <div class="col-8">
+                <div class="card">
+                    <div class="card-header">
+					<h2><center> Admin Login</center></h2>
+                    <div class="card-body">
 					<form method="post" style="justify-content:center; display: flex;">
 							<fieldset>
 								<legend>
@@ -44,10 +48,10 @@ $_SESSION['errmsg']="Invalid username or password";
 									Please enter your name and password to log in.<br />
 									<span style="color:red;"><?php echo htmlentities($_SESSION['errmsg']); ?><?php echo htmlentities($_SESSION['errmsg']="");?></span>
 								</p>
-								
+								<div class="form-floating mb-1">
 									<input style="margin-bottom:10px;" type="text" class="form-control" name="username" placeholder="Username">
 								
-								
+                                    <div class="form-floating mb-2">
 									<input style="margin-bottom:10px;" type="password" class="form-control" name="password" placeholder="Password">
 								
 								
