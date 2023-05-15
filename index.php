@@ -30,7 +30,14 @@ $_SESSION['errmsg']="Invalid username or password";
 	<head>
 		<title>Admin-Login</title>
 		<link rel="stylesheet" href="bootstrap.min.css">
+        <style>
+			body{
+				background-image: url(perpustakaan.jpeg);
+			}
+		</style>
 	</head>
+    <script>
+    </script>
 	<body class="login">
 		<div class="container mt-3">
 			<div class="row justify-content-center">
